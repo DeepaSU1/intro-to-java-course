@@ -1,7 +1,7 @@
 package com.cbfacademy;
 
-public class DicePlayer {
-    private String name;
+public class DicePlayer implements Player{
+     private String name;
 
     public String getName() {
         return name;
