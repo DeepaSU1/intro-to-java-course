@@ -1,11 +1,10 @@
 
-
 package com.cbfacademy.cars;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Car{
+public class Car {
     private String make;
     private String model;
     private String colour;
@@ -18,32 +17,32 @@ public class Car{
         this.year = year;
     }
 
-    public String getMake(){
+    public String getMake() {
         return make;
     }
 
-    public String getModel(){
+    public String getModel() {
         return model;
     }
 
-    public int getYear(){
+    public int getYear() {
         return year;
     }
 
-    public String getColour(){
+    public String getColour() {
         return colour;
     }
 
-    public void setColour(String colour){
+    public void setColour(String colour) {
         this.colour = colour;
     }
 
-    public String getDetails(){
+    public String getDetails() {
         return "Car Details" + make + model + colour + year;
     }
 }
 
-     class Showroom {
+class Showroom {
     // Method to get the list of cars
     public List<Car> getCars() {
         List<Car> cars = new ArrayList<>();
@@ -52,6 +51,4 @@ public class Car{
         cars.add(new Car("Audi", "A3", "Grey", 2018));
         return cars;
     }
-    }
-
-    
+}
