@@ -1,8 +1,7 @@
+
 package com.cbfacademy;
 
-import java.lang.reflect.Array;
-
-publc class Arrays {
+public class Arrays {
     public static void main(String[] args){
         int[] intArr = {12,24,14,23,64,14,63,54};
         float[] floatArr = {1f,2f,3f,4f,5f,6f,7f,8f,9f,10f,11f,12f};
