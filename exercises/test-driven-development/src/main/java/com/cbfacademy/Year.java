@@ -2,15 +2,14 @@
 package com.cbfacademy;
 
 public class Year {
-    public boolean isLeap(int year){
-        if (year % 400 == 0){
-            return true;
-        } else if (year % 100 == 0) {
-            return false;
-        } else if (year % 4 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+    private final Integer year;
+
+    public Year(Integer year){
+        this.year = year;
+    }
+    public boolean isLeap(){
+        if (year % 400 == 0) return true;
+        if (year % 100 == 0) return false;
+        return (year % 4 == 0);
     }
 }

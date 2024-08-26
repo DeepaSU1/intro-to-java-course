@@ -1,16 +1,20 @@
 
 package com.cbfacademy;
 
-class SourceSpy implements Source {
-        private final String content;
-        private int index = 0;
+interface Source {
+    String getCharacter();
+}
 
-        public SourceSpy(String content){
-            this.content = content;
+public class SourceSpy implements Source {
+        private Integer numberOfCalls = 0;
+        
+        @Override
+        public String getCharacter() {
+            this.numberOfCalls += 1;
+            return null;
         }
 
-        @Override
-        public char getChar(){
-            return index < content.length() ? content.charAt(index++) : '\n';
+        Boolean wasCalled(){
+            return this.numberOfCalls > 0;
         }
     }

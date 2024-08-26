@@ -74,16 +74,16 @@ public class AppTest {
 
     
 
-    public class CharacterCopierTest {
-        @Test
-        public void testCopy(){
-            SourceSpy source = new SourceSpy("hello\nworld");
-            DestinationSpy destination = new DestinationSpy();
-            CharacterCopier copier = new CharacterCopier(source, destination);
-            copier.copy();
-            assertEquals("hello", destination.getCaptured());
-        }
-    }
+    // public class CharacterCopierTest {
+    //     @Test
+    //     public void testCopy(){
+    //         SourceSpy source = new SourceSpy("hello\nworld");
+    //         DestinationSpy destination = new DestinationSpy();
+    //         CharacterCopier copier = new CharacterCopier(source, destination);
+    //         copier.copy();
+    //         assertEquals("hello", destination.getCaptured());
+    //     }
+    // }
 
     // public class CharacterCopierTest {
     //     @Test

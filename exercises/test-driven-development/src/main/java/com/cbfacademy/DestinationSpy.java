@@ -1,16 +1,21 @@
 
 package com.cbfacademy;
 
-class DestinationSpy implements Destination {
-        private final StringBuilder captured = new StringBuller();
+interface Destination{
+    void setCharacter(final String character);
+}
+
+public class DestinationSpy implements Destination {
+        private Integer numberOfCalls = 0;
 
     @override
-        public void setChar(char c){
-            captured.append(c);
+
+        public void setCharacter(final String character){
+            this.numberOfCalls += 1;
 
         }
 
-        public String getCaptured(){
-            return captured.toString();
+        boolean wasCalled(){
+            return this.numberOfCalls > 0;
         }
     }
