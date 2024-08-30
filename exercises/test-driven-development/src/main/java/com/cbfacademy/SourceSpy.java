@@ -10,7 +10,7 @@ public class SourceSpy implements Source {
         
         @Override
         public String getCharacter() {
-            this.numberOfCalls += 1;
+            this.numberOfCalls = this.numberOfCalls + 1;
             return null;
         }
 

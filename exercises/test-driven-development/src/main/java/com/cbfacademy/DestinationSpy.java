@@ -2,16 +2,16 @@
 package com.cbfacademy;
 
 interface Destination{
-    void setCharacter(final String character);
+    void setCharacter(String character);
 }
 
 public class DestinationSpy implements Destination {
         private Integer numberOfCalls = 0;
 
-    @override
+    @Override
 
-        public void setCharacter(final String character){
-            this.numberOfCalls += 1;
+        public void setCharacter(String character){
+            this.numberOfCalls = this.numberOfCalls + 1;
 
         }
 
